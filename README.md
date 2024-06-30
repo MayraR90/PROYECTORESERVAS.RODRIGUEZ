@@ -61,3 +61,33 @@ Se está desarrollando un sistema de gestión de reservas para un club que permi
 **DESCRIPCIÓN:**
 Necesitamos una base de la base para nuestro club que permita registrar las reservas que realizan los socios para las actividades que brindamos  todos los días.
 
++------------------+        +-----------------------+        +------------------+
+|      CLIENTE     |        |       RESERVA         |        |     SEDE         |
++------------------+        +-----------------------+        +------------------+          
+| idCliente (PK)   |<>-----o| idReserva (PK)        |o-------| idsede(PK)       |
+| nombre           |        | idCliente (FK)        |        | nombre           |
+| telefono         |        | idMesa (FK)           |        | direccion        |
+| correo           |        | idEmpleado (FK)       |        | telefono         |
++------------------+        | idTipoReserva (FK)    |        +------------------+
+                            | fecha                 |
+                            | cancelacion           |                  |
+                            +-----------------------+                  |
+                                    |                                  |
+                                    |                                  |
+                                    v                                  v
++------------------+        +------------------+             +-------------------+
+|     Empleado     |        |      Mesa        |             |     Dueno         |
++------------------+        +------------------+             +-------------------+
+| idEmpleado (PK)  |        | idMesa (PK)      |             | idDueno (PK)      |
+| nombre           |        | idRestaurante(FK)|             | nombre            |
+| telefono         |        | capacidad        |             | correo            |
+| correo           |        | disponible       |             | telefono          |
+| idRestaurante(FK)|        +------------------+             +-------------------+
++------------------+                  |
+                             +-------------------+
+                             |   TipoReserva     |
+                             +-------------------+
+                             | idTipoReserva(PK) |
+                             | tipo              |
+                             +-------------------+
+
