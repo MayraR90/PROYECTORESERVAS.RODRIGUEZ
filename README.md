@@ -4,7 +4,7 @@
 **PREENTREGA DE PROYECTO:**
 
 
-**CURSO:SQL**
+**CURSO:** SQL
 
 
 
