@@ -52,7 +52,7 @@ Se está desarrollando un sistema de gestión de reservas de las actividades par
 
 2. **Gestión de reservas y disponibilidad:** La base de datos debe permitirnos registrar la disponibilidad de las reservas de cada actividad. Esto nos permitirá evitar conflictos de reservas.
 
-3. **Registro de reservas:**: Necesitamos un sistema que pueda registrar de manera detallada cada reserva realizada.
+3. **Registro de reservas:** Necesitamos un sistema que pueda registrar de manera detallada cada reserva realizada.
 
 
 ### DESCRIPCIÓN:
@@ -61,13 +61,11 @@ Necesitamos una base de la base para nuestro club que permita registrar las rese
 ### TABLAS:
 **SOCIOS.**
 - Almacena información sobre los socios que realizan reservas.
-
--Atributos: ID_SOCIO (PK),NOMBRE,APELLIDO,DNI,TELÉFONO,EMAIL Y FECHA_ALTA.
+- Atributos: ID_SOCIO (PK),NOMBRE,APELLIDO,DNI,TELÉFONO,EMAIL Y FECHA_ALTA.
 
 **RESERVAS.**
--Registra las reservas realizadas por los socios del club.
-
--Atributos: ID_RESERVA (PK),FECHA_HORA,CANCELACIÓN,ID_SOCIO (FK) ,ID_ACTIVIDAD (FK), ID_PROFESOR (FK) Y ID_SEDE (FK).
+- Registra las reservas realizadas por los socios del club.
+- Atributos: ID_RESERVA (PK),FECHA_HORA,CANCELACIÓN,ID_SOCIO (FK) ,ID_ACTIVIDAD (FK), ID_PROFESOR (FK) Y ID_SEDE (FK).
 
 **ACTIVIDADES.**
 -Contiene información sobre las actividades disponibles en el club.
