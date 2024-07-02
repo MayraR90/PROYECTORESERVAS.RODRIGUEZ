@@ -68,22 +68,19 @@ Necesitamos una base de la base para nuestro club que permita registrar las rese
 - Atributos: ID_RESERVA (PK),FECHA_HORA,CANCELACIÓN,ID_SOCIO (FK) ,ID_ACTIVIDAD (FK), ID_PROFESOR (FK) Y ID_SEDE (FK).
 
 **ACTIVIDADES.**
--Contiene información sobre las actividades disponibles en el club.
-
--Atributos: ID_ACTIVIDAD (PK),NOMBRE,FECHA_HORA, DISPONIBILIDAD Y ID_PROFESOR (FK).
+- Contiene información sobre las actividades disponibles en el club.
+- Atributos: ID_ACTIVIDAD (PK),NOMBRE,FECHA_HORA, DISPONIBILIDAD Y ID_PROFESOR (FK).
 
 **SEDE.**
--Contiene información de las sedes que tenemos sobre las cuáles se realizarán las reservas de las actividades.
+- Contiene información de las sedes que tenemos sobre las cuáles se realizarán las reservas de las actividades.
 
--Atributos: ID_SEDE,DIRECCIÓN, TELÉFONO y ID_DUEÑO (FK).
+- Atributos: ID_SEDE,DIRECCIÓN, TELÉFONO y ID_DUEÑO (FK).
 
 **DUEÑO.**
--Contiene información de los dueños de cada una de nuestras sedes.
-
--Atributos: ID_DUEÑO (PK),NOMBRE,APELLIDO,TELÉFONO.
+- Contiene información de los dueños de cada una de nuestras sedes.
+- Atributos: ID_DUEÑO (PK),NOMBRE,APELLIDO,TELÉFONO.
 
 **PROFESORES.**
--Contiene información de los profesores que realizan las actividades en nuestras sedes.
-
--Atributos:ID_PROFESOR (PK),NOMBRES.APELLIDO,DNI,TELÉFONO,ALTA,ID_ACTIVIDAD (FK), ID_SEDE(FK).
+- Contiene información de los profesores que realizan las actividades en nuestras sedes.
+- Atributos:ID_PROFESOR (PK),NOMBRES.APELLIDO,DNI,TELÉFONO,ALTA,ID_ACTIVIDAD (FK), ID_SEDE(FK).
  
