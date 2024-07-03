@@ -8,10 +8,10 @@ use PROYECTO_RESERVAS;
 
 -- CREAMOS LA TABLA SOCIOS
 create table SOCIOS (
-	ID_SOCIO INT primary key AUTO_INCREMENT 
-,	NOMBRE VARCHAR (50)
-,	APELLIDO VARCHAR (50)
-,	DNI INT unique 
+	ID_SOCIO INT primary key not null AUTO_INCREMENT 
+,	NOMBRE VARCHAR (50) not null
+,	APELLIDO VARCHAR (50) not null
+,	DNI INT unique not null
 ,	TELEFONO INT not NULL
 ,	MAIL VARCHAR (60) not null unique 
 ,	FECHA_ALTA datetime
@@ -19,7 +19,7 @@ create table SOCIOS (
 
 -- CREAMOS LA TABLA RESERVAS
 create table RESERVAS(
-	ID_RESERVA int primary key auto_increment
+	ID_RESERVA int primary key not null auto_increment
 ,	FECHA_HORA datetime
 ,	CANCELACION DATETIME
 ,	ID_SOCIO int 
@@ -30,16 +30,16 @@ create table RESERVAS(
 
 -- CREAMOS LA TABLA ACTIVIDADES
 create table ACTIVIDADES (
-	ID_ACTIVIDAD int unique primary key
-,	NOMBRE varchar (50)
-,	DISPONIBILIDAD boolean
+	ID_ACTIVIDAD int unique primary key not null
+,	NOMBRE varchar (50) not null
+,	DISPONIBILIDAD boolean not null
 , 	FECHA_HORA DATETIME
 ,	ID_PROFESOR int
 );
 
 -- CREAMOS LA TABLA SEDE
 create table SEDE (
-	ID_SEDE INT primary key AUTO_INCREMENT
+	ID_SEDE INT primary key not null AUTO_INCREMENT
 ,	DIRECCION VARCHAR (100)
 ,	TELEFONO INT 
 ,	ID_DUENO INT
@@ -47,17 +47,17 @@ create table SEDE (
 
 -- CREAMOS LA TABLA DUEÑO
 create table DUENO (
-	ID_DUENO INT primary key AUTO_INCREMENT
-,	NOMBRE VARCHAR (50)
+	ID_DUENO INT primary key not null AUTO_INCREMENT
+,	NOMBRE VARCHAR (50) 
 ,	APELLIDO VARCHAR (50)
 ,	TELEFONO INT not NULL
 );
 
 -- CREAMOS LA TABLA PROFESORES
 create table PROFESORES (
-	ID_PROFESOR INT unique primary key auto_increment 
-,	NOMBRES VARCHAR (50)
-,   APELLIDO VARCHAR (50)
+	ID_PROFESOR INT unique primary key not null auto_increment 
+,	NOMBRES VARCHAR (50) not null
+,   APELLIDO VARCHAR (50) not null
 ,	DNI INT unique
 ,	TELEFONO int
 ,	ALTA datetime
