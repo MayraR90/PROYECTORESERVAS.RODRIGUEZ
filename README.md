@@ -1,4 +1,4 @@
-# PROYECTO RESERVAS | RODRIGUEZ
+ # PROYECTO RESERVAS | RODRIGUEZ
 
 ## **PREENTREGA DE PROYECTO**
 
@@ -69,5 +69,5 @@
 
 **6. PROFESORES.**
 - *Contiene información de los profesores que realizan las actividades en nuestras sedes.*
-- ***Atributos:** ID_PROFESOR (PK), NOMBRES, APELLIDO, DNI, TELÉFONO, ALTA, ID_ACTIVIDAD (FK), ID_SEDE(FK).*
+- ***Atributos:** ID_PROFESOR (PK), NOMBRES, APELLIDO, DNI, TELÉFONO, ALTA, ID_ACTIVIDAD (FK), ID_SEDE (FK).*
  
